@@ -1,0 +1,6 @@
+﻿CREATE FUNCTION [dbo].[HttpGet]
+(@sURL NVARCHAR (4000))
+RETURNS NVARCHAR (MAX)
+AS
+ EXTERNAL NAME [HTTPGet_1].[UserDefinedFunctions].[HttpGet]
+

@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[syssdev] (
+    [Host_id]           VARCHAR (10)  NULL,
+    [Host_name]         VARCHAR (30)  NULL,
+    [Aplicatia]         VARCHAR (30)  NULL,
+    [Data_operarii]     DATETIME2 (3) NULL,
+    [Utilizator]        VARCHAR (10)  NULL,
+    [Tip_act]           VARCHAR (1)   NULL,
+    [Cod_deviz]         VARCHAR (20)  NULL,
+    [Denumire_deviz]    VARCHAR (50)  NULL,
+    [Data_lansarii]     DATETIME2 (3) NULL,
+    [Data_inchiderii]   DATETIME2 (3) NULL,
+    [Obiect_deviz]      VARCHAR (20)  NULL,
+    [Obiectiv_deviz]    VARCHAR (20)  NULL,
+    [Executant]         VARCHAR (9)   NULL,
+    [Beneficiar]        VARCHAR (13)  NULL,
+    [Facturat]          BIT           NOT NULL,
+    [Categorie_deviz]   VARCHAR (9)   NULL,
+    [Integral]          BIT           NOT NULL,
+    [Valoare_deviz]     FLOAT (53)    NOT NULL,
+    [Valoare_realizari] FLOAT (53)    NOT NULL,
+    [Utilizator_dev]    VARCHAR (10)  NULL,
+    [Data_operarii_dev] DATETIME2 (3) NULL,
+    [Ora_operarii]      VARCHAR (6)   NULL
+) ON [SYSS];
+

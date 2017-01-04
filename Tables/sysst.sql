@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[sysst] (
+    [Host_id]                  VARCHAR (10)  NULL,
+    [Host_name]                VARCHAR (30)  NULL,
+    [Aplicatia]                VARCHAR (30)  NULL,
+    [Data_stergerii]           DATETIME2 (7) NULL,
+    [Stergator]                VARCHAR (10)  NULL,
+    [Subunitate]               VARCHAR (9)   NULL,
+    [Tert]                     VARCHAR (13)  NULL,
+    [Denumire]                 VARCHAR (80)  NULL,
+    [Cod_fiscal]               VARCHAR (16)  NULL,
+    [Localitate]               VARCHAR (35)  NULL,
+    [Judet]                    VARCHAR (20)  NULL,
+    [Adresa]                   VARCHAR (60)  NULL,
+    [Telefon_fax]              VARCHAR (20)  NULL,
+    [Banca]                    VARCHAR (20)  NULL,
+    [Cont_in_banca]            VARCHAR (35)  NULL,
+    [Tert_extern]              BIT           NOT NULL,
+    [Grupa]                    VARCHAR (3)   NULL,
+    [Cont_ca_furnizor]         VARCHAR (20)  NULL,
+    [Cont_ca_beneficiar]       VARCHAR (20)  NULL,
+    [Sold_ca_furnizor]         FLOAT (53)    NOT NULL,
+    [Sold_ca_beneficiar]       FLOAT (53)    NOT NULL,
+    [Sold_maxim_ca_beneficiar] FLOAT (53)    NOT NULL,
+    [Disccount_acordat]        REAL          NOT NULL
+) ON [SYSS];
+

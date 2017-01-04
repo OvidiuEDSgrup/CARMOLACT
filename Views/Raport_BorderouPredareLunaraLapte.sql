@@ -1,0 +1,81 @@
+﻿CREATE VIEW [Raport_BorderouPredareLunaraLapte] AS
+SELECT 
+
+AL_CentrColectProdLapte.CentrColectProdLapte_Centru_colectare AS Centru_colectare,
+AL_CentrColectProdLapte.CentrColectProdLapte_Producator AS Producator,
+AL_CentrColectProdLapte.CentrColectProdLapte_Nr_ordine AS Nr_ordine,
+AL_CentrColectProdLapte.CentrColectProdLapte_Nr_fisa AS Nr_fisa,
+AL_CentrColectProdLapte.CentrColectProdLapte_Tip_lapte AS Tip_lapte,
+AL_CentrColectProdLapte.CentrColectProdLapte_Data_inscrierii AS Data_inscrierii,
+
+AL_CentrColectProdLapte.CentrColectLapte_Cod_centru_colectare AS Cod_centru_colectare,
+AL_CentrColectProdLapte.CentrColectLapte_Denumire AS CentrColectLapte_Denumire,
+AL_CentrColectProdLapte.CentrColectLapte_Cod_IBAN AS Cod_IBAN,
+AL_CentrColectProdLapte.CentrColectLapte_Banca AS Banca,
+AL_CentrColectProdLapte.CentrColectLapte_Sat AS CentrColectLapte_Sat,
+AL_CentrColectProdLapte.CentrColectLapte_Comuna AS CentrColectLapte_Comuna,
+AL_CentrColectProdLapte.CentrColectLapte_Localitate AS CentrColectLapte_Localitate,
+AL_CentrColectProdLapte.CentrColectLapte_Judet AS CentrColectLapte_Judet,
+AL_CentrColectProdLapte.CentrColectLapte_Responsabil AS Responsabil,
+AL_CentrColectProdLapte.CentrColectLapte_Loc_de_munca AS Loc_de_munca,
+AL_CentrColectProdLapte.CentrColectLapte_Tip_pers AS CentrColectLapte_Tip_pers,
+
+AL_CentrColectProdLapte.ProdLapte_Cod_producator AS Cod_producator,
+AL_CentrColectProdLapte.ProdLapte_Denumire AS ProdLapte_Denumire,
+AL_CentrColectProdLapte.ProdLapte_Initiala_tatalui AS Initiala_tatalui,
+AL_CentrColectProdLapte.ProdLapte_Serie_buletin AS Serie_buletin,
+AL_CentrColectProdLapte.ProdLapte_Nr_buletin AS Nr_buletin,
+AL_CentrColectProdLapte.ProdLapte_Eliberat AS Eliberat,
+AL_CentrColectProdLapte.ProdLapte_CNP_CUI AS CNP_CUI,
+AL_CentrColectProdLapte.ProdLapte_Judet AS ProdLapte_Judet,
+AL_CentrColectProdLapte.ProdLapte_Localitate AS ProdLapte_Localitate,
+AL_CentrColectProdLapte.ProdLapte_Comuna AS ProdLapte_Comuna,
+AL_CentrColectProdLapte.ProdLapte_Sat AS ProdLapte_Sat,
+AL_CentrColectProdLapte.ProdLapte_Strada AS Strada,
+AL_CentrColectProdLapte.ProdLapte_Nr_str AS Nr_str,
+AL_CentrColectProdLapte.ProdLapte_Nr_casa AS Nr_casa,
+AL_CentrColectProdLapte.ProdLapte_Bloc AS Bloc,
+AL_CentrColectProdLapte.ProdLapte_Scara AS Scara,
+AL_CentrColectProdLapte.ProdLapte_Etaj AS Etaj,
+AL_CentrColectProdLapte.ProdLapte_Ap AS Ap,
+AL_CentrColectProdLapte.ProdLapte_Cod_exploatatie AS Cod_exploatatie,
+AL_CentrColectProdLapte.ProdLapte_Cota_actuala AS Cota_actuala,
+AL_CentrColectProdLapte.ProdLapte_Grad_actual AS Grad_actual,
+AL_CentrColectProdLapte.ProdLapte_Tip_pers AS ProdLapte_Tip_pers,
+AL_CentrColectProdLapte.ProdLapte_Tert AS Tert,
+AL_CentrColectProdLapte.ProdLapte_Reprezentant AS Reprezentant,
+AL_CentrColectProdLapte.ProdLapte_CNP_repr AS CNP_repr,
+
+AL_CentrColectProdLapte.TipLapte_Cod AS TipLapte_Cod,
+AL_CentrColectProdLapte.TipLapte_Denumire AS TipLapte_Denumire,
+AL_CentrColectProdLapte.TipLapte_Grasime_standard AS TipLapte_Grasime_standard,
+AL_CentrColectProdLapte.TipLapte_Cota AS TipLapte_Cota,
+
+AL_CentrColectProdLapte.lm_Cod AS lm_Cod,
+AL_CentrColectProdLapte.lm_Denumire AS lm_Denumire,
+
+AL_CentrColectProdLapte.terti_Tert AS terti_Tert,
+AL_CentrColectProdLapte.terti_Denumire AS terti_Denumire,
+AL_CentrColectProdLapte.terti_Cod_fiscal AS terti_Cod_fiscal,
+
+AL_CentrColectProdLapte.Judete_cod_judet AS Judete_cod_judet,
+AL_CentrColectProdLapte.Judete_denumire AS Judete_denumire,
+
+AL_CentrColectProdLapte.Localitati_cod_oras AS Localitati_cod_oras,
+AL_CentrColectProdLapte.Localitati_cod_judet AS Localitati_cod_judet,
+AL_CentrColectProdLapte.Localitati_oras AS Localitati_oras
+/*
+select 
+rtrim(t.name)
+--'IntrariLapteCompartimente'
++'.'+rtrim(ltrim(c.name))+' AS '
+--+rtrim(t.name)
+--+'IntrariLapteCompartimente'
+--+'_'
++rtrim(ltrim(c.name))+','
+from sysobjects t 
+	inner join syscolumns c on t.id=c.id
+where t.name='AL_CentrColectProdLapte'
+*/
+FROM AL_CentrColectProdLapte
+WHERE RTRIM(CentrColectProdLapte_Producator)<>''

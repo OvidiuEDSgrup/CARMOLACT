@@ -1,0 +1,42 @@
+﻿CREATE VIEW Raport_UrmarireCotaAchizitiiLapte AS
+SELECT 
+UtilizareCotaProdAnCurent_Producator AS Producator,
+UtilizareCotaProdAnCurent_Centru_colectare AS Centru_colectare,
+UtilizareCotaProdAnCurent_Data_inc_an_cota AS Data_inc_an_cota,
+UtilizareCotaProdAnCurent_Data_sf_an_cota AS Data_sf_an_cota,
+UtilizareCotaProdAnCurent_An_cota AS An_cota,
+UtilizareCotaProdAnCurent_Cant_UM AS Cant_UM,
+UtilizareCotaProdAnCurent_Cant_UG AS Cant_UG,
+UtilizareCotaProdAnCurent_Cant_STAS AS Cant_STAS,
+UtilizareCotaProdAnCurent_Cant_UM_cota AS Cant_UM_cota,
+UtilizareCotaProdAnCurent_Cant_UG_cota AS Cant_UG_cota,
+UtilizareCotaProdAnCurent_Cant_STAS_UM_cota AS Cant_STAS_UM_cota,
+UtilizareCotaProdAnCurent_Grad_actual AS Grad_actual,
+UtilizareCotaProdAnCurent_Cota_actuala AS Cota_actuala,
+UtilizareCotaProdAnCurent_Cota_utilizata AS Cota_utilizata,
+UtilizareCotaProdAnCurent_Proc_utiliz_cota AS Proc_utiliz_cota,
+UtilizareCotaProdAnCurent_Nr_livrari_efectuate AS Nr_livrari_efectuate,
+UtilizareCotaProdAnCurent_Nr_luni_colecta_ramase AS Nr_luni_colecta_ramase,
+UtilizareCotaProdAnCurent_Nr_luni_an_cota_ramase AS Nr_luni_an_cota_ramase,
+UtilizareCotaProdAnCurent_Cant_UM_rest_cota AS Cant_UM_rest_cota,
+UtilizareCotaProdAnCurent_Gras_medie_rest_cota AS Gras_medie_rest_cota,
+UtilizareCotaCentrAnCurent_Nr_livrari_efectuate,
+
+ProdLapte_Cod_producator AS Cod_producator,
+ProdLapte_Denumire AS ProdLapte_Denumire,
+ProdLapte_CNP_CUI AS CNP_CUI,
+ProdLapte_Cod_exploatatie AS Cod_exploatatie,
+ProdLapte_Localitate,
+ProdLapte_Nr_casa,
+
+CentrColectLapte_Cod_centru_colectare AS Cod_centru_colectare,
+CentrColectLapte_Denumire,
+CentrColectLapte_Localitate,
+CentrColectLapte_Judet,
+CentrColectLapte_Loc_de_munca AS Loc_de_munca,
+
+CalStd_An AS An,
+CalStd_Luna AS Luna,
+CalStd_LunaAlfa AS LunaAlfa
+
+FROM AL_UtilizareCotaProdAnCurent

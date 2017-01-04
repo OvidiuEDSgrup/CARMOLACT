@@ -1,0 +1,25 @@
+﻿CREATE TABLE [dbo].[syssmm] (
+    [Host_id]                 VARCHAR (10)  NULL,
+    [Host_name]               VARCHAR (30)  NULL,
+    [Aplicatia]               VARCHAR (30)  NULL,
+    [Data_stergerii]          DATETIME2 (7) NULL,
+    [Stergator]               VARCHAR (10)  NULL,
+    [Subunitate]              VARCHAR (9)   NULL,
+    [Data_lunii_de_miscare]   DATETIME2 (3) NULL,
+    [Numar_de_inventar]       VARCHAR (13)  NULL,
+    [Tip_miscare]             VARCHAR (3)   NULL,
+    [Numar_document]          VARCHAR (8)   NULL,
+    [Data_miscarii]           DATETIME2 (3) NULL,
+    [Tert]                    VARCHAR (13)  NULL,
+    [Factura]                 VARCHAR (20)  NULL,
+    [Pret]                    FLOAT (53)    NOT NULL,
+    [TVA]                     FLOAT (53)    NOT NULL,
+    [Cont_corespondent]       VARCHAR (20)  NULL,
+    [Loc_de_munca_primitor]   VARCHAR (20)  NULL,
+    [Gestiune_primitoare]     VARCHAR (20)  NULL,
+    [Diferenta_de_valoare]    FLOAT (53)    NOT NULL,
+    [Data_sfarsit_conservare] DATETIME2 (3) NULL,
+    [Subunitate_primitoare]   VARCHAR (40)  NULL,
+    [Procent_inchiriere]      REAL          NOT NULL
+) ON [SYSS];
+
